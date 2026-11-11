@@ -1,0 +1,29 @@
+name: Compilar APK
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Compilar
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
+
+      - name: Renombrar APK
+        run: cp app/build/outputs/apk/release/*.apk Bloques.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Bloques-APK
+          path: Bloques.apk
