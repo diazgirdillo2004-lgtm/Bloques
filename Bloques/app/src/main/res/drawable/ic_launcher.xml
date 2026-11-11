@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp"
+    android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#10131A" android:pathData="M4,4h40v40h-40z"/>
+    <!-- T morada -->
+    <path android:fillColor="#B04CF0" android:pathData="M10,26h9v9h-9zM19,26h9v9h-9zM28,26h9v9h-9zM19,17h9v9h-9z"/>
+    <!-- I cian -->
+    <path android:fillColor="#2EE6E6" android:pathData="M10,35h7v6h-7zM17,35h7v6h-7zM24,35h7v6h-7zM31,35h7v6h-7z"/>
+    <!-- O amarilla -->
+    <path android:fillColor="#F2D22E" android:pathData="M30,8h7v7h-7zM37,8h7v7h-7zM30,15h7v7h-7zM37,15h7v7h-7z"/>
+</vector>
